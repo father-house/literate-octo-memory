@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0; font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-      background: #f5f8fa; color: #233;
+      margin: 0; 
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f5f8fa; 
+      color: #233;
     }
     nav {
       background: #223c50;
@@ -27,7 +29,7 @@
       background: #1a2b38;
     }
     .container {
-      max-width: 650px;
+      max-width: 750px;
       margin: 44px auto;
       background: #fff;
       border-radius: 12px;
@@ -38,27 +40,27 @@
     .top-photos {
       display: flex;
       justify-content: center;
-      gap: 18px;
-      margin-bottom: 20px;
+      gap: 20px;
+      margin-bottom: 28px;
       flex-wrap: wrap;
     }
     .top-photos img {
-      max-width: 47%;
-      min-width: 180px;
-      height: 140px;
+      max-width: 48%;
+      min-width: 240px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 1px 6px #223c5012;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px #223c501a;
       background: #eee;
     }
-    @media (max-width: 600px) {
-      .container { padding: 10px 3vw; }
-      .top-photos { gap: 10px; }
-      .top-photos img {
-        max-width: 100%;
+    @media (max-width: 900px) {
+      .container { padding: 14px 3vw; }
+      .top-photos img { 
+        max-width: 100%; 
         min-width: 120px;
-        height: 90px;
+        height: 160px; 
       }
+      .top-photos { gap: 10px; }
     }
     h1 {
       color: #204060;
