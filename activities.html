@@ -35,6 +35,31 @@
       padding: 34px 28px 28px 28px;
       text-align: center;
     }
+    .top-photos {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .top-photos img {
+      max-width: 47%;
+      min-width: 180px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px #223c5012;
+      background: #eee;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 10px 3vw; }
+      .top-photos { gap: 10px; }
+      .top-photos img {
+        max-width: 100%;
+        min-width: 120px;
+        height: 90px;
+      }
+    }
     h1 {
       color: #204060;
       margin-bottom: 26px;
@@ -78,13 +103,17 @@
 <body>
 
   <nav>
-    <a href="index.html">Home</a>   
+    <a href="index.html">Home</a>
     <a href="personnel.html">Personnel</a>
     <a href="activities.html" class="active">Activities</a>
     <a href="contact.html">Contact Us</a>
   </nav>
 
   <div class="container">
+    <div class="top-photos">
+      <img src="a.jpg" alt="Activity Photo A">
+      <img src="b.jpg" alt="Activity Photo B">
+    </div>
     <h1>Our Activities</h1>
     <div class="activities-list">
       <div class="activity-title">Orphan Care & Shelter</div>
@@ -101,7 +130,6 @@
 
       <div class="activity-title">Community Outreach</div>
       Engaging with local communities through awareness campaigns, relief programs, and collaboration with other organizations to help those in need.
-      
     </div>
     <a href="index.html" class="back-link">&larr; Back to Home</a>
   </div>
